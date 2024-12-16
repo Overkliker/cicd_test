@@ -17,7 +17,7 @@ app = FastAPI(
 #         raise HTTPException(status_code=500, detail=f"Error processing prompt: {e}")
 #
 #
-async def tag_to_AI_answer(currect_tags: str) -> str:
+async def tag_to_AI_answer(currect_tags: str) -> str:;
     try:
         return await convert_tag_to_answer(currect_tags.strip())
     except Exception as e:
